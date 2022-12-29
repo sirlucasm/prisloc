@@ -1,0 +1,41 @@
+{
+  "name": "@prisloc/client",
+  "version": "0.0.0",
+  "description": "An local auto-generated query builder inspired in Prisma.io. You can use it as an alternative to traditional ORMs such as Sequelize, TypeORM or SQL query builders like knex.js.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "yarn jest",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prisloc/prisloc"
+  },
+  "keywords": [
+    "local database",
+    "database",
+    "banco de dados local",
+    "de",
+    "dados",
+    "local",
+    "prisloc"
+  ],
+  "author": "sirlucasm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sirlucasm/prisloc/issues"
+  },
+  "homepage": "https://github.com/sirlucasm/prisloc#readme",
+  "devDependencies": {
+    "@types/jest": "^29.2.4",
+    "@types/node": "^18.11.18",
+    "gluegun": "^5.1.2",
+    "jest": "^29.3.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.1",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
