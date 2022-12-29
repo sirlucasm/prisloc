@@ -1,0 +1,17 @@
+{
+  "name": "@prisloc/cli",
+  "version": "0.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "yarn jest",
+    "build": ""
+  },
+  "author": "sirlucasm",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prisloc/prisloc"
+  }
+}

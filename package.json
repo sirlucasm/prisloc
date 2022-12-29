@@ -1,0 +1,19 @@
+{
+  "name": "prisloc",
+  "version": "0.0.0",
+  "description": "Build a local database for your applications with PrisLoc",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "yarn jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirlucasm/prisloc.git"
+  },
+  "author": "sirlucasm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sirlucasm/prisloc/issues"
+  },
+  "homepage": "https://github.com/sirlucasm/prisloc#readme"
+}
