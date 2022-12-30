@@ -1,22 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "commonjs",
-    "lib": ["ES2020", "ES2021.WeakRef"],
+    "target": "es2017",
+    "module": "esnext",
+    "lib": ["es6"],
+    "allowJs": true,
+    "removeComments": true,
     "esModuleInterop": true,
-    "isolatedModules": true,
-    "sourceMap": true,
-    "declaration": true,
-    "strict": true,
-    "noImplicitAny": false,
-    "noUncheckedIndexedAccess": false,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "useUnknownInCatchVariables": false,
-    "skipDefaultLibCheck": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "skipLibCheck": true,
-    "emitDeclarationOnly": true,
-    "resolveJsonModule": true
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true
   },
-  "exclude": ["**/dist", "**/node_modules", "**/src/__tests__"]
+  "include": ["./src/**/*.ts"]
 }

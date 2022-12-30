@@ -4,7 +4,17 @@
   "description": "Build a local database for your applications with PrisLoc",
   "main": "build/index.js",
   "scripts": {
-    "test": "yarn jest"
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "turbo run test",
+    "preinstall": "npx only-allow yarn",
+    "commit": "yarn git-cz"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.17.0"
   },
   "repository": {
     "type": "git",
@@ -15,5 +25,18 @@
   "bugs": {
     "url": "https://github.com/sirlucasm/prisloc/issues"
   },
-  "homepage": "https://github.com/sirlucasm/prisloc#readme"
+  "homepage": "https://github.com/sirlucasm/prisloc#readme",
+  "devDependencies": {
+    "commitizen": "^4.2.6",
+    "turbo": "^1.6.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "global": "^4.4.0",
+    "gluegun": "^5.1.2"
+  }
 }
