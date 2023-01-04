@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "module": "esnext",
-    "lib": ["es6"],
+    "target": "ES2020",
+    "module": "ES2020",
+    "lib": ["ES7"],
     "allowJs": true,
     "removeComments": true,
     "esModuleInterop": true,
@@ -11,7 +11,24 @@
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "declaration": true
+    "declaration": true,
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "inlineSourceMap": false,
+    "outDir": "build",
+    "strict": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "build/types",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@prisloc/cli": ["./packages/cli"],
+      "@prisloc/client": ["./packages/client"],
+    }
   },
-  "include": ["./src/**/*.ts"]
+  "include": ["**/src/*.ts"],
+  "exclude": ["**/build", "**/node_modules", "**/src/__tests__"]
 }
