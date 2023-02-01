@@ -52,6 +52,6 @@
     "gluegun": "^5.1.2"
   },
   "workspaces": {
-    "packages": ["packages/*"]
+    "packages": ["packages/*", "examples"]
   }
 }

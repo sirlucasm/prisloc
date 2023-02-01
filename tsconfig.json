@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "ES2020",
+    "module": "ESNext",
     "lib": ["ES7"],
     "allowJs": true,
     "removeComments": true,
@@ -19,10 +19,8 @@
     "noUnusedLocals": true,
     "sourceMap": true,
     "inlineSourceMap": false,
-    "outDir": "build",
     "strict": true,
     "emitDeclarationOnly": true,
-    "declarationDir": "build/types",
     "allowSyntheticDefaultImports": true,
     "paths": {
       "@prisloc/cli": ["./packages/cli"],

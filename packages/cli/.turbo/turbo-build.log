@@ -1,0 +1,4 @@
+$ yarn clean-build && yarn compile && yarn copy-templates
+$ rm -rf ./build
+$ tsc -p .
+$ copyfiles ./src/templates/* ./build/templates
