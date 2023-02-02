@@ -1,0 +1,26 @@
+{
+  "models": [
+    {
+      "tableName": "User",
+      "columns": [
+        {
+          "name": "name",
+          "type": "String",
+          "default": "teste"
+        }
+      ],
+      "map": "users"
+    },
+    {
+      "tableName": "Post",
+      "columns": [
+        {
+          "name": "title",
+          "type": "String",
+          "default": "Example title"
+        }
+      ],
+      "map": "posts"
+    }
+  ]
+}

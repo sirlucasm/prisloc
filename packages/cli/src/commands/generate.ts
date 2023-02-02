@@ -1,6 +1,7 @@
 import { GluegunToolbox } from 'gluegun'
 import loading from 'loading-cli'
-import { Engine } from '@prisloc/core'
+import { Engine, SchemaType } from '@prisloc/core'
+import { ConfigData } from '../types'
 
 const load = loading({
   color: 'yellow',
@@ -15,14 +16,23 @@ module.exports = {
 
     load.start('Reading schema...')
 
-    const schemaPath = await filesystem.findAsync({ directories: true, files: true, matching: '.prisloc' })
+    const packageJson = JSON.parse((await filesystem.readAsync(filesystem.path('package.json'))) || '{}')
+
+    if (packageJson) {
+      const configData: ConfigData = packageJson.prisloc
+      if (configData && configData.schema) engine.setPath(configData.schema)
+    }
+
+    const schema: SchemaType = JSON.parse((await filesystem.readAsync(filesystem.path(engine.path))) || '{}')
 
     load.start('Generating types...')
 
-    engine.generate()
+    const typesGenerated = engine.generate(schema)
 
-    console.log(schemaPath)
+    const typesPath = filesystem.path(engine.path, '..', 'types.ts')
 
-    load.succeed(`Your Prisloc schema was created at ${engine.path}.`)
+    await filesystem.fileAsync(typesPath, { content: typesGenerated })
+
+    load.succeed(`Your types are generated at ${typesPath}.`)
   },
 }

@@ -1,4 +1,6 @@
+import { SchemaType } from './types/Schema'
 import { generateFirstSchema } from './utils/schemaGenerator'
+import { generateTableTypes } from './utils/typesGenerator'
 
 export class Engine {
   cwd = ''
@@ -16,7 +18,7 @@ export class Engine {
     this.path = path
   }
 
-  generate() {
-    console.log(this.cwd)
+  generate(schema: SchemaType) {
+    return generateTableTypes(schema)
   }
 }
