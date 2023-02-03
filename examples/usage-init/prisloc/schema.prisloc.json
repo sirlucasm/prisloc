@@ -1,18 +1,27 @@
 {
   "models": [
     {
-      "tableName": "User",
+      "tableName": "user",
       "columns": [
         {
           "name": "name",
           "type": "String",
           "default": "teste"
+        },
+        {
+          "name": "email",
+          "type": "String",
+          "required": false
+        },
+        {
+          "name": "createdAt",
+          "type": "DateTime"
         }
       ],
       "map": "users"
     },
     {
-      "tableName": "Post",
+      "tableName": "post",
       "columns": [
         {
           "name": "title",

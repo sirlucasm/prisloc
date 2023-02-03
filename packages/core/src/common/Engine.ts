@@ -4,7 +4,7 @@ import { generateTableTypes } from './utils/typesGenerator'
 
 export class Engine {
   cwd = ''
-  path = 'prisloc/schema.prisloc'
+  path = 'prisloc/schema.prisloc.json'
 
   constructor() {
     this.cwd = process.cwd()

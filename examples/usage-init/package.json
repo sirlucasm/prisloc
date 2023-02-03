@@ -9,8 +9,5 @@
   },
   "dependencies": {
     "@prisloc/cli": "*"
-  },
-  "prisloc": {
-    "schema": "database/schema.prisloc"
   }
 }

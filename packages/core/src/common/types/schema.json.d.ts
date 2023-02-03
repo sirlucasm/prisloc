@@ -22,7 +22,7 @@ interface SchemaType {
   ]
 }
 
-declare module '*.prisloc' {
+declare module '*.prisloc.json' {
   const value: SchemaType
   export default value
 }

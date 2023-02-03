@@ -10,6 +10,7 @@ export type SchemaType = {
           type: ModelTypes
           map?: string
           unique?: boolean
+          required?: boolean
           relation?: {
             field: string
             reference: string

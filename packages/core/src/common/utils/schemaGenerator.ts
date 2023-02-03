@@ -9,6 +9,7 @@ export const generateFirstSchema = (): SchemaType => ({
           name: 'name',
           type: 'String',
           default: 'teste',
+          required: false,
         },
       ],
       map: 'users',
