@@ -1,2 +1,4 @@
+warning You don't appear to have an internet connection. Try the --offline flag to use the cache for registry queries.
 $ yarn tsc --build
+warning You don't appear to have an internet connection. Try the --offline flag to use the cache for registry queries.
 $ C:\Users\lucas\OneDrive\Documentos\projects\prisloc\node_modules\.bin\tsc --build

@@ -7,6 +7,15 @@
           "name": "name",
           "type": "String",
           "default": "teste"
+        },
+        {
+          "name": "email",
+          "type": "String",
+          "default": "teste@gmail.com"
+        },
+        {
+          "name": "createdAt",
+          "type": "DateTime"
         }
       ],
       "map": "users"

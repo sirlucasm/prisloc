@@ -1,4 +1,8 @@
+warning You don't appear to have an internet connection. Try the --offline flag to use the cache for registry queries.
 $ yarn clean-build && yarn compile && yarn copy-templates
+warning You don't appear to have an internet connection. Try the --offline flag to use the cache for registry queries.
 $ rm -rf ./build
+warning You don't appear to have an internet connection. Try the --offline flag to use the cache for registry queries.
 $ tsc -p .
+warning You don't appear to have an internet connection. Try the --offline flag to use the cache for registry queries.
 $ copyfiles ./src/templates/* ./build/templates

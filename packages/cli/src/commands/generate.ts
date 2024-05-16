@@ -31,7 +31,7 @@ module.exports = {
 
     const typesPath = filesystem.path(engine.path, '..', 'types.ts')
 
-    await filesystem.fileAsync(typesPath, { content: typesGenerated })
+    await filesystem.fileAsync(typesPath, { content: typesGenerated, jsonIndent: 2 })
 
     load.succeed(`Your types are generated at ${typesPath}.`)
   },

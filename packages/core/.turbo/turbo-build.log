@@ -1,1 +1,2 @@
+warning You don't appear to have an internet connection. Try the --offline flag to use the cache for registry queries.
 $ tsc -p .
