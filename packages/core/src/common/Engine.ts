@@ -6,7 +6,7 @@ import fs from 'fs/promises'
 export class Engine {
   private corePath = '../../packages/core/'
   cwd = ''
-  path = 'prisloc/schema.prisloc'
+  path = 'prisloc/schema.prisloc.json'
 
   constructor() {
     this.cwd = process.cwd()

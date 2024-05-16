@@ -23,7 +23,9 @@ module.exports = {
       if (configData && configData.schema) engine.setPath(configData.schema)
     }
 
-    const schema: SchemaType = JSON.parse((await filesystem.readAsync(filesystem.path(engine.path))) || '{}')
+    const schemaReaded = await filesystem.readAsync(filesystem.path(engine.path))
+
+    const schema: SchemaType = JSON.parse(schemaReaded || '{}')
 
     load.start('Generating types...')
 
@@ -33,6 +35,6 @@ module.exports = {
 
     await filesystem.fileAsync(typesPath, { content: typesGenerated, jsonIndent: 2 })
 
-    load.succeed(`Your types are generated at ${typesPath}.`)
+    load.succeed(`Your types are generated at ${engine.path}.`)
   },
 }

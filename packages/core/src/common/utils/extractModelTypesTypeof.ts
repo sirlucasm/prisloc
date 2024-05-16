@@ -8,5 +8,8 @@ export const extractModelTypesTypeof = (modelType: ModelTypes) => {
     DateTime: new Date(),
     Object: {},
   }
+  if (modelType === 'DateTime') {
+    return 'Date'
+  }
   return typeof extractor[modelType]
 }

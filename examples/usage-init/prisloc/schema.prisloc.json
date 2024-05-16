@@ -1,7 +1,7 @@
 {
   "models": [
     {
-      "tableName": "User",
+      "tableName": "user",
       "columns": [
         {
           "name": "name",
@@ -11,7 +11,7 @@
         {
           "name": "email",
           "type": "String",
-          "default": "teste@gmail.com"
+          "required": false
         },
         {
           "name": "createdAt",
@@ -21,7 +21,7 @@
       "map": "users"
     },
     {
-      "tableName": "Post",
+      "tableName": "post",
       "columns": [
         {
           "name": "title",
