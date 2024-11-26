@@ -1,0 +1,45 @@
+{
+  "name": "prisloc",
+  "version": "0.1.0",
+  "description": "A local-first Prisma-like ORM for TypeScript",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint \"src/**/*.ts\"",
+    "test": "jest",
+    "clean": "rimraf .turbo node_modules dist coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "orm",
+    "typescript",
+    "database",
+    "local",
+    "prisma",
+    "typeorm"
+  ],
+  "author": "sirlucasm",
+  "license": "MIT",
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.5",
+    "@types/uuid": "^9.0.2",
+    "jest": "^29.6.2",
+    "rimraf": "^5.0.1",
+    "ts-jest": "^29.1.1",
+    "tsup": "^7.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
