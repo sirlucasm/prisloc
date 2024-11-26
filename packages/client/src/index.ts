@@ -2,7 +2,7 @@ import { PrislocModel } from './model'
 import { PrislocStorage } from './storage'
 import { PrislocConfig } from './types'
 
-export class Prisloc {
+export default class Prisloc {
   private storage: PrislocStorage
   private models: Map<string, PrislocModel> = new Map()
   private config: PrislocConfig

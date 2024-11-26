@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "prisloc": "*"
+    "prisloc": "workspace:"
   },
   "devDependencies": {
     "@swc/core": "^1.9.3",
