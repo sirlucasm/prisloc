@@ -1,5 +1,11 @@
 # prisloc
 
+## 0.1.6
+
+### Patch Changes
+
+- 4187321: testing package issues
+
 ## 0.1.5
 
 ### Patch Changes
