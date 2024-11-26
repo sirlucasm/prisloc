@@ -1,5 +1,11 @@
 # prisloc
 
+## 0.1.5
+
+### Patch Changes
+
+- d6aeafe: fix bugs
+
 ## 0.1.4
 
 ### Patch Changes
