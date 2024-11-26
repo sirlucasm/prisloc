@@ -1,6 +1,7 @@
 {
-  "name": "prisloc-monorepo",
-  "private": true,
+  "name": "prisloc",
+  "version": "0.1.0",
+  "description": "A local-first Prisma-like ORM for TypeScript",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
@@ -25,7 +26,24 @@
   "engines": {
     "node": ">=20.0.0"
   },
-  "workspaces": [
-    "packages/prisloc"
+  "bugs": {
+    "url": "https://github.com/sirlucasm/prisloc/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirlucasm/prisloc.git"
+  },
+  "homepage": "https://github.com/sirlucasm/prisloc#readme",
+  "author": "sirlucasm",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "orm",
+    "typescript",
+    "database",
+    "local",
+    "prisma",
+    "typeorm"
   ]
 }
