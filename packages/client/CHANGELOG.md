@@ -1,5 +1,11 @@
 # prisloc
 
+## 0.1.7
+
+### Patch Changes
+
+- 44172dc: testing
+
 ## 0.1.6
 
 ### Patch Changes
