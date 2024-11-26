@@ -1,0 +1,19 @@
+{
+  "name": "prisloc-examples",
+  "version": "1.0.0",
+  "main": "./dist/src/index.js",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup src/**/* --watch"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "prisloc": "^0.1.0"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.9.3",
+    "@types/node": "^20.4.5",
+    "tsup": "^7.1.0",
+    "typescript": "^5.7.2"
+  }
+}
