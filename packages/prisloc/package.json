@@ -27,6 +27,14 @@
   ],
   "author": "sirlucasm",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sirlucasm/prisloc/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirlucasm/prisloc.git"
+  },
+  "homepage": "https://github.com/sirlucasm/prisloc#readme",
   "dependencies": {
     "uuid": "^9.0.0"
   },
