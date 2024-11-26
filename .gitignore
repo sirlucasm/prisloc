@@ -4,6 +4,8 @@
 /build
 /packages/**/*/node_modules
 
+.turbo
+
 # Logs
 logs
 *.log

@@ -1,17 +1,14 @@
 {
-  "name": "prisloc/client",
-  "version": "0.1.0",
+  "name": "prisloc",
+  "version": "0.1.2",
   "description": "A local-first Prisma-like ORM for TypeScript",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "sideEffects": false,
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "tsup src/**/*",
+    "dev": "tsup src/**/* --watch",
     "lint": "eslint \"src/**/*.ts\"",
     "test": "jest",
     "clean": "rimraf .turbo node_modules dist coverage",
@@ -37,5 +34,23 @@
     "rimraf": "^5.0.1",
     "ts-jest": "^29.1.1",
     "tsup": "^7.1.0"
+  },
+  "files": [
+    "dist/index.js",
+    "dist/types.js",
+    "dist/index.d.ts",
+    "dist/types.d.ts"
+  ],
+  "bugs": {
+    "url": "https://github.com/sirlucasm/prisloc/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirlucasm/prisloc.git"
+  },
+  "homepage": "https://github.com/sirlucasm/prisloc#readme",
+  "author": "sirlucasm",
+  "publishConfig": {
+    "access": "public"
   }
 }

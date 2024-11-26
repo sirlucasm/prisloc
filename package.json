@@ -1,16 +1,22 @@
 {
-  "name": "prisloc",
-  "version": "0.1.1",
-  "description": "A local-first Prisma-like ORM for TypeScript",
+  "name": "prisloc-monorepo",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "test": "turbo run test",
+    "publish-packages": "npm run build && changeset version && changeset publish",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pack": "npm pack"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.10"
   },
   "devDependencies": {
+    "@swc/core": "^1.9.3",
     "@typescript-eslint/eslint-plugin": "^8.16.0",
     "@typescript-eslint/parser": "^8.16.0",
     "eslint": "^9.15.0",
@@ -26,18 +32,6 @@
   "engines": {
     "node": ">=20.0.0"
   },
-  "bugs": {
-    "url": "https://github.com/sirlucasm/prisloc/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sirlucasm/prisloc.git"
-  },
-  "homepage": "https://github.com/sirlucasm/prisloc#readme",
-  "author": "sirlucasm",
-  "publishConfig": {
-    "access": "public"
-  },
   "keywords": [
     "orm",
     "typescript",
@@ -45,5 +39,9 @@
     "local",
     "prisma",
     "typeorm"
+  ],
+  "workspaces": [
+    "packages/*",
+    "examples/*"
   ]
 }
