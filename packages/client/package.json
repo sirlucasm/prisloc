@@ -1,6 +1,6 @@
 {
   "name": "prisloc",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A local-first Prisma-like ORM for TypeScript",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -36,8 +36,7 @@
     "tsup": "^7.1.0"
   },
   "files": [
-    "src/index.ts",
-    "src/types.ts"
+    "dist"
   ],
   "bugs": {
     "url": "https://github.com/sirlucasm/prisloc/issues"
@@ -49,6 +48,12 @@
   "homepage": "https://github.com/sirlucasm/prisloc#readme",
   "author": "sirlucasm",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "ignore": [
+      "!dist/",
+      "src/",
+      "src/utils",
+      "type/"
+    ]
   }
 }
