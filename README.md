@@ -23,52 +23,54 @@ pnpm add prisloc
 ## Quick Start
 
 ```typescript
-import { Prisloc } from 'prisloc'
+// prisloc/config.ts
+import { PrislocConfig } from 'prisloc'
 
-// Initialize Prisloc
-const prisloc = new Prisloc('./data')
+const config: PrislocConfig = {
+  dataPath: './data',
+  models: [
+    {
+      name: 'User',
+      map: 'usuarios', // Nome personalizado no armazenamento
+      fields: {
+        id: { type: 'string', required: true },
+        name: { type: 'string', required: true },
+        department: {
+          type: 'map',
+          relation: {
+            model: 'Department',
+            reference: 'code',
+          },
+        },
+      },
+    },
+    {
+      name: 'Department',
+      fields: {
+        code: { type: 'string', required: true },
+        name: { type: 'string', required: true },
+      },
+    },
+  ],
+}
 
-// Define your model
-const User = prisloc.defineModel({
-  name: 'User',
-  fields: {
-    email: {
-      type: 'string',
-      required: true,
-      unique: true,
-    },
-    name: {
-      type: 'string',
-      required: true,
-    },
-    age: {
-      type: 'number',
-    },
-  },
+export default config
+
+// Uso na aplicação
+import { PrislocClient } from 'prisloc'
+import config from './prisloc/config'
+
+const client = new PrislocClient(config)
+
+// Criando um departamento
+const department = await client.create('Department', {
+  code: 'IT',
+  name: 'Tecnologia da Informação',
 })
 
-// Use the model
-async function main() {
-  // Create
-  const user = await User.create({
-    email: 'john@example.com',
-    name: 'John Doe',
-    age: 30,
-  })
-
-  // Read
-  const users = await User.findMany({
-    where: {
-      age: { gt: 25 },
-    },
-  })
-
-  // Update
-  const updated = await User.update({ email: 'john@example.com' }, { age: 31 })
-
-  // Delete
-  const deleted = await User.delete({
-    email: 'john@example.com',
-  })
-}
+// Criando um usuário com relacionamento
+const user = await client.create('User', {
+  name: 'João Silva',
+  department: department.code,
+})
 ```
