@@ -1,5 +1,11 @@
 # prisloc
 
+## 0.1.21
+
+### Patch Changes
+
+- 3c7ae6a: final test
+
 ## 0.1.20
 
 ### Patch Changes

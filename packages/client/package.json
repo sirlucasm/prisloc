@@ -1,6 +1,6 @@
 {
   "name": "prisloc",
-  "version": "0.1.20",
+  "version": "0.1.21",
   "description": "A local-first Prisma-like ORM for TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,6 +11,7 @@
     "clean": "rimraf .turbo node_modules dist coverage",
     "typecheck": "tsc --noEmit"
   },
+  "type": "module",
   "keywords": [
     "orm",
     "typescript",
