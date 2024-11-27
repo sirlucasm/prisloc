@@ -1,6 +1,6 @@
 import fs from 'fs/promises'
 import path from 'path'
-import { ModelField, PrislocConfig } from './types'
+import { ModelField, PrislocConfig } from '../types'
 
 export class PrislocStorage {
   private config: PrislocConfig

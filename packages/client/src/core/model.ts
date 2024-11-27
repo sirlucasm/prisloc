@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid'
-import { ModelDefinition, OrderByClause, WhereClause } from './types'
+import { ModelDefinition, OrderByClause, WhereClause } from '../types'
 import { PrislocStorage } from './storage'
 
 export class PrislocModel {

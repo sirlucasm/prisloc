@@ -1,4 +1,4 @@
-import { PrislocConfig } from 'prisloc'
+import { PrislocConfig } from 'prisloc/src/types'
 
 const config: PrislocConfig = {
   dataPath: './data',
@@ -10,7 +10,7 @@ const config: PrislocConfig = {
         id: { type: 'string', required: true },
         name: { type: 'string', required: true },
         department: {
-          type: 'map',
+          type: 'object',
           relation: {
             model: 'Department',
             reference: 'code',
