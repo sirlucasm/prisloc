@@ -1,5 +1,11 @@
 # prisloc
 
+## 0.1.22
+
+### Patch Changes
+
+- 8574c7c: cli test
+
 ## 0.1.21
 
 ### Patch Changes
