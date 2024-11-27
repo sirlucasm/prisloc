@@ -11,7 +11,6 @@
     "clean": "rimraf .turbo node_modules dist coverage",
     "typecheck": "tsc --noEmit"
   },
-  "type": "module",
   "keywords": [
     "orm",
     "typescript",
