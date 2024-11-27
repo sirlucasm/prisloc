@@ -1,0 +1,5 @@
+---
+'prisloc': patch
+---
+
+cli test
