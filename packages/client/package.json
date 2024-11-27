@@ -1,6 +1,6 @@
 {
   "name": "prisloc",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "A local-first Prisma-like ORM for TypeScript",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -22,8 +22,7 @@
   ],
   "files": [
     "dist",
-    "src/index.ts",
-    "src/types.ts"
+    "src"
   ],
   "license": "MIT",
   "dependencies": {
