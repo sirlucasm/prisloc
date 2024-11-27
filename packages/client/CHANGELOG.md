@@ -1,5 +1,11 @@
 # prisloc
 
+## 0.1.12
+
+### Patch Changes
+
+- b3b9592: testing
+
 ## 0.1.11
 
 ### Patch Changes
