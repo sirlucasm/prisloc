@@ -1,5 +1,11 @@
 # prisloc
 
+## 0.1.17
+
+### Patch Changes
+
+- 2e4e893: testing
+
 ## 0.1.16
 
 ### Patch Changes

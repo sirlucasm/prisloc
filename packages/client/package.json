@@ -1,11 +1,10 @@
 {
   "name": "prisloc",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "A local-first Prisma-like ORM for TypeScript",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "types": "dist/types/index.d.ts",
-  "sideEffects": false,
+  "types": "dist/types.d.ts",
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .ts,.tsx",
@@ -20,6 +19,11 @@
     "local",
     "prisma",
     "typeorm"
+  ],
+  "files": [
+    "dist",
+    "src/index.ts",
+    "src/types.ts"
   ],
   "license": "MIT",
   "dependencies": {
