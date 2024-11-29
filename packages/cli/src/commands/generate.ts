@@ -1,7 +1,7 @@
 import { GluegunToolbox } from 'gluegun'
 import fs from 'fs/promises'
 import { PrislocClient } from 'prisloc'
-import { ModelGenerator } from 'prisloc/dist/utils/modelGenerator'
+import { ModelGenerator } from 'prisloc/src/utils/modelGenerator'
 
 module.exports = {
   name: 'generate',

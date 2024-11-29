@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+// import path from 'path'
+
+// const __dirname = path.resolve()
+
+// const basePath = path.resolve(__dirname, '..')
+// const distPath = path.resolve(basePath, 'dist')
+// const cliPath = path.resolve(distPath, 'index')
+
+if (['v', 'version', '-v', '--v', '-version', '--version'].includes(process.argv[2])) {
+  var contents = require('fs').readFileSync(__dirname + '/../package.json')
+  var package = JSON.parse(contents)
+  console.log(package.version)
+  process.exit(0)
+}
+
+const devMode = require('fs').existsSync(`${__dirname}/../src`)
+
+const wantsCompiled = process.argv.indexOf('--compiled-build') >= 0
+
+if (wantsCompiled || !devMode) {
+  require(`${__dirname}/../dist/index`).run(process.argv)
+} else {
+  require('ts-node').register({
+    project: `${__dirname}/../tsconfig.json`,
+  })
+
+  require(`${__dirname}/../src/index`).run(process.argv)
+}

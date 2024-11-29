@@ -1,6 +1,6 @@
 {
   "name": "prisloc-cli",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "description": "This is Prisloc CLI",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,6 +11,9 @@
     "clean": "rimraf .turbo node_modules dist coverage",
     "typecheck": "tsc --noEmit"
   },
+  "bin": {
+    "prisloc": "bin/prisloc"
+  },
   "keywords": [
     "orm",
     "typescript",
@@ -19,9 +22,17 @@
     "cli",
     "gluegun"
   ],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "bin",
+    "package.json"
+  ],
   "license": "MIT",
   "dependencies": {
     "gluegun": "^5.2.0",
+    "loading-cli": "^1.1.2",
     "prisloc": "workspace:*"
   },
   "devDependencies": {
