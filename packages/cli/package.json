@@ -1,0 +1,46 @@
+{
+  "name": "prisloc-cli",
+  "version": "0.0.1",
+  "description": "This is Prisloc CLI",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "clean": "rimraf .turbo node_modules dist coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "orm",
+    "typescript",
+    "database",
+    "local",
+    "cli",
+    "gluegun"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "gluegun": "^5.2.0",
+    "prisloc": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "jest": "^29.6.2",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.2",
+    "tsup": "^7.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/sirlucasm/prisloc/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirlucasm/prisloc.git"
+  },
+  "homepage": "https://github.com/sirlucasm/prisloc/packages/cli#readme",
+  "author": "sirlucasm",
+  "publishConfig": {
+    "access": "public"
+  }
+}

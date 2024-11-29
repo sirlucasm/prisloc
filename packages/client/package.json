@@ -11,9 +11,6 @@
     "clean": "rimraf .turbo node_modules dist coverage",
     "typecheck": "tsc --noEmit"
   },
-  "bin": {
-    "prisloc": "bin/prisloc"
-  },
   "keywords": [
     "orm",
     "typescript",
@@ -46,7 +43,7 @@
     "type": "git",
     "url": "git+https://github.com/sirlucasm/prisloc.git"
   },
-  "homepage": "https://github.com/sirlucasm/prisloc#readme",
+  "homepage": "https://github.com/sirlucasm/prisloc/packages/client#readme",
   "author": "sirlucasm",
   "publishConfig": {
     "access": "public"

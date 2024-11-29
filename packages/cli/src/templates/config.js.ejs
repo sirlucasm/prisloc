@@ -1,0 +1,21 @@
+import { PrislocConfig } from 'prisloc';
+
+const config: PrislocConfig = {
+  dataPath: './data',
+  models: [
+    {
+      name: 'User',
+      fields: {
+        id: { type: 'string', required: true },
+        name: { type: 'string', required: true },
+        email: { 
+          type: 'string', 
+          required: true, 
+          unique: true 
+        }
+      }
+    }
+  ]
+};
+
+export default config;
