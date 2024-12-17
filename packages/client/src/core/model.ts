@@ -89,14 +89,17 @@ export class PrislocModel {
     }
 
     if (options?.orderBy) {
-      const [field, order] = Object.entries(options.orderBy)[0]
-      data.sort((a, b) => {
-        if (order === 'asc') {
-          return a[field] > b[field] ? 1 : -1
-        } else {
-          return a[field] < b[field] ? 1 : -1
-        }
-      })
+      const entry = Object.entries(options.orderBy)[0]
+      if (entry) {
+        const [field, order] = entry
+        data.sort((a, b) => {
+          if (order === 'asc') {
+            return a[field] > b[field] ? 1 : -1
+          } else {
+            return a[field] < b[field] ? 1 : -1
+          }
+        })
+      }
     }
 
     if (options?.skip) {
